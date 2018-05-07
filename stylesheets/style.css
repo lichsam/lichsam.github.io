@@ -21,7 +21,8 @@ nav div{
 	margin-bottom: 10px;
 }
 nav div:hover{
-	opacity: 0.8;
+	opacity: 0.7;
+	text-shadow: 2px 2px 2px gray;
 }
 nav p{
 	position: absolute;
@@ -29,12 +30,13 @@ nav p{
 	width: 90%;
 	font-weight: bold;
 	font-size: 21px;
+	text-shadow: 2px 2px 3px #4C4C4C;
 }
 nav .menu_profile{
 	background-color: #3466D5;
 }
 nav .menu_awards{
-	background-color: #F17C72;
+	background-color: #FE3E3E;
 }
 nav .menu_projects{
 	background-color: #32AC97;
@@ -48,6 +50,7 @@ article{
 	margin-left: 15%;
 	text-align: center;
 	z-index: 999;
+	color: white;
 }
 article > div{
 	position: relative;
@@ -55,17 +58,43 @@ article > div{
 	height: 100%;
 	box-shadow: -3px 0px 5px #000000;
 }
+
 article #profile div{
 	position: absolute;
 	top: calc(50% - 143.5px);
 	width: 100%;
 }
+article #contents div{
+	position: relative;
+	top: calc(50% - 124.5px);
+	width: 100%;
+}
+article #awards div{
+	position: absolute;
+	top: calc(50% - 143.5px);
+	width: 100%;
+}
+article #projects div{
+	position: absolute;
+	top: calc(50% - 143.5px);
+	width: 100%;
+}
+article #contact div{
+	position: absolute;
+	top: calc(50% - 143.5px);
+	width: 100%;
+}
+
 article ul{
 	margin: auto;
 	width: 400px;
 	height: 15%;
 	text-align: left;
 	font-size: 20px;
+}
+article .title{
+	font-size: 60px;
+	font-weight: bold;
 }
 
 article #profile{
@@ -76,16 +105,46 @@ article #profile table{
 	text-align: center;
 	color: white;
 }
-article .title{
-	font-size: 60px;
+
+article #contents{
+	height: 50%;
+}
+article #contents table{
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+}
+article #contents .circle{
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+}
+article #contents .circle_awards{
+	background-color: #FE3E3E;;
+}
+article #contents .circle_projects{
+	background-color: #32AC97;
+}
+article #contents .circle_contact{
+	background-color: #289DFC;
+}
+article #contents img{
+	position: relative;
+	top: calc(50% - 60px);
+}
+article #contents tr:nth-child(2) td{
+	padding-top: 20px;
+	font-size: 20px;
 	font-weight: bold;
 }
-article #awards{
 
+article #awards{
+	background-color: #FE3E3E;
 }
 article #projects{
-
+	background-color: #32AC97;
 }
 article #contact{
-
+	background-color: #289DFC;
 }
