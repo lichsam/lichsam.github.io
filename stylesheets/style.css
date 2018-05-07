@@ -1,7 +1,7 @@
-@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 body{
 	margin: 0 auto;
-	font-family: 'NanumSquare';
+	font-family: 'Nanum Gothic', serif;
 }
 nav{
 	position: fixed;
@@ -16,8 +16,7 @@ nav a{
 }
 nav div{
 	position: relative;
-	padding-top: 15%;
-	height: 20%;
+	height: 24%;
 	margin-bottom: 10px;
 }
 nav div:hover{
@@ -26,7 +25,7 @@ nav div:hover{
 }
 nav p{
 	position: absolute;
-	top: calc(50% - 25px);
+	top: calc(50% - 30px);
 	width: 90%;
 	font-weight: bold;
 	font-size: 21px;
@@ -59,6 +58,7 @@ article > div{
 	box-shadow: -3px 0px 5px #000000;
 }
 
+/*섹션별 세로 가운데 정렬*/
 article #profile div{
 	position: absolute;
 	top: calc(50% - 143.5px);
@@ -71,28 +71,23 @@ article #contents div{
 }
 article #awards div{
 	position: absolute;
-	top: calc(50% - 143.5px);
+	top: calc(50% - 264px);
 	width: 100%;
 }
 article #projects div{
 	position: absolute;
-	top: calc(50% - 143.5px);
+	top: calc(50% - 181px);
 	width: 100%;
 }
 article #contact div{
 	position: absolute;
-	top: calc(50% - 143.5px);
+	top: calc(50% - 70px);
 	width: 100%;
 }
+/*섹션별 세로 가운데 정렬*/
 
-article ul{
-	margin: auto;
-	width: 400px;
-	height: 15%;
-	text-align: left;
-	font-size: 20px;
-}
 article .title{
+	margin-top: 0;
 	font-size: 60px;
 	font-weight: bold;
 }
@@ -105,9 +100,15 @@ article #profile table{
 	text-align: center;
 	color: white;
 }
+article #profile ul{
+	margin: auto;
+	width: 340px;
+	text-align: left;
+	font-size: 20px;
+}
 
 article #contents{
-	height: 50%;
+	height: 400px;
 }
 article #contents table{
 	margin: 0 auto;
@@ -142,9 +143,50 @@ article #contents tr:nth-child(2) td{
 article #awards{
 	background-color: #FE3E3E;
 }
+article #awards ul{
+	margin: auto;
+	width: 850px;
+	text-align: left;
+	font-size: 20px;
+}
+article #awards li{
+	margin-bottom: 10px;
+}
+article #awards .date{
+	margin-right: 20px;
+}
+article #awards .award_name{
+	margin-left: 20px;
+	color: #bdbdbd;
+}
+
 article #projects{
 	background-color: #32AC97;
 }
+article #projects ul{
+	margin: auto;
+	width: 600px;
+	text-align: left;
+	font-size: 20px;
+}
+article #projects li{
+	margin-bottom: 10px;
+}
+article #projects a{
+	cursor: pointer;
+	color: white;
+}
+article #projects a:hover{
+	color: #FFFF7E;
+}
+
 article #contact{
 	background-color: #289DFC;
+}
+article #contact .mail{
+	font-size: 60px;
+	font-weight: bold;
+}
+article #contact .mail:hover{
+	color: #FFFF7E;
 }
