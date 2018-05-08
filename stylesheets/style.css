@@ -1,7 +1,12 @@
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 body{
 	margin: 0 auto;
 	font-family: 'Nanum Gothic', serif;
+	background-size: 85%;
+	background-image: url('../images/background.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 nav{
 	position: fixed;
@@ -86,6 +91,11 @@ article #contact div{
 }
 /*섹션별 세로 가운데 정렬*/
 
+article .background_div{
+	height: 150px;
+	width: 100%;
+}
+
 article .title{
 	margin-top: 0;
 	font-size: 60px;
@@ -109,6 +119,7 @@ article #profile ul{
 
 article #contents{
 	height: 400px;
+	background-color: white;
 }
 article #contents table{
 	margin: 0 auto;
@@ -189,4 +200,23 @@ article #contact .mail{
 }
 article #contact .mail:hover{
 	color: #FFFF7E;
+}
+
+footer{
+	width: 85%;
+	padding-left: 15%;
+	background-color: #D5D5D5;
+	color: #4A4A4A;
+	text-align: center;
+	font-weight: bold;
+	font-size: 17px;
+}
+footer div{
+	position: relative;
+	height: 100px;
+}
+footer p{
+	position: absolute;
+	top: calc(50% - 25px);
+	width: 100%;
 }
