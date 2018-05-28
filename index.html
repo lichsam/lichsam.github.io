@@ -1,104 +1,84 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>웹프로그래밍 컴퓨터소프트웨어학과 최한설 2014726084</title>		
-	<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
-	<script type="text/javascript" src="js/main.js"></script>
+	<title>Choi Hanseol Portfolio Intro</title>
+	<style type="text/css">
+	@import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+	*{
+		font-family: 'Nanum Gothic', serif;
+		border-radius: 10px;
+	}
+	body{
+		text-align: center;
+		background-color: #4C4C4C;
+	}
+
+	.check_box{
+		position: absolute;
+		top: calc(50% - 200px);
+		left: calc(50% - 400px);
+		height: 400px;
+		width: 800px;
+		background-color: white;
+		box-shadow: 1px 0px 2px #000000;
+	}
+	.check{
+		position: relative;
+		top: calc(50% - 85px);
+	}
+	.check .name{
+		font-size: 20px;
+		width: 500px;
+		height: 50px;
+		text-align: center;
+		margin-bottom: 15px;
+		border: 1px solid black;
+	}
+	#return_text{
+		font-size: 15px;
+		color: #FF4848;
+		font-weight: bold;
+	}
+	.check .btn{
+		margin-top: 15px;
+		width: 500px;
+		height: 50px;
+		font-size: 20px;
+		border: none;
+		background-color: #4375DB;
+		color: white;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	.check .btn:hover{
+		background-color: #3162C7;
+	}
+</style>
+<script>
+	function name_check(){
+		if (check.name.value == "최한설"){
+			alert("\n\n이름이 확인되었습니다!\n\n");
+			return true;
+		}
+		else if(check.name.value == ""){
+			document.getElementById('return_text').innerHTML = "이름이 입력되지 않았습니다!";
+			return false;
+		}
+		else{
+			document.getElementById('return_text').innerHTML = "이름이 올바르지 않습니다. 다시 입력해주세요.";
+			return false;
+		}
+	}
+</script>
 </head>
 <body>
-	<nav>
-		<a href="#profile"><div class=menu_profile><p>PROFILE</p></div></a>
-		<a href="#awards"><div class=menu_awards><p>AWARDS</p></div></a>
-		<a href="#projects"><div class=menu_projects><p>PROJECTS</p></div></a>
-		<a href="#contact"><div class=menu_contact><p>CONTACT</p></div></a>
-	</nav>
-	<article>
-		<div id="profile">
-			<div>
-				<table>
-					<tr>
-						<td rowspan="2">
-							<img src="images/profile_img.png"/>
-						</td>
-						<td class=title>최&nbsp;&nbsp;&nbsp;한&nbsp;&nbsp;&nbsp;설</td>
-					</tr>
-					<tr>
-						<td>
-							<ul>
-								<li>광운대학교 컴퓨터소프트웨어학과 재학</li>
-								<br/><br/>
-								<li>경희고등학교 졸업</li>
-							</ul>
-						</td>
-					</tr>
-				</table>
-			</div>
+		<div class="check_box">
+			<form class="check" name="check" method="post" onsubmit="return name_check()" action="main">
+				<input type="text" class="name" name="name" placeholder="누구의 포트폴리오인지 기재하십시오."><br/>
+				<p id="return_text">이름을 입력해주세요.</p>
+				<input type="submit" class="btn" value="이 름  확 인">
+			</form>
 		</div>
-		<div class="background_div"></div>
-		<div id="contents">
-			<div>
-				<table>
-					<tr>
-						<td><div class='circle circle_awards'><img src="images/awards.png" width="120"/></div></td>
-						<td><div class='circle circle_projects'><img src="images/projects.png" width="120"/></div></td>
-						<td><div class='circle circle_contact'><img src="images/contact.png" width="120"/></div></td>
-					</tr>
-					<tr>
-						<td>상&nbsp;&nbsp;훈</td>
-						<td>프로젝트</td>
-						<td>연&nbsp;&nbsp;락</td>
-					</tr>
-				</table>
-			</div>
-		</div>
-		<div class="background_div"></div>
-		<div id="awards">
-			<div>
-				<p class=title>상훈</p>
-				<ul>
-					<li><span class="date">2017.12</span>2017 도시락 아이디어 경진대회 드림상<span class="award_name">- SNK-비타민센터 센터장</span></span></li>
-					<li><span class="date">2017.09</span>광운대학교 제6회 Idea Fair 최우수상<span class="award_name">- 광운대학교 총장</span></li>
-					<li><span class="date">2017.09</span>광운대학교 제5회 프레젠테이션 경진대회 최우수상<span class="award_name">- 광운대학교 총장</span></li>
-					<li><span class="date">2017.02</span>2016 광운 창업아이디어 경진대회 최우수상<span class="award_name">- 광운대학교 총장</span></li>
-					<li><span class="date">2016.11</span>공학교육페스티벌 전국 창업투자 아이디어 경진대회 우수상<span class="award_name">- 공학교육혁신협의회장</span></li>
-					<li><span class="date">2016.11</span>WEEF & GEDC 2016, 골드칼라 공학도상<span class="award_name">- 한국공학교육학회장</span></li>
-					<li><span class="date">2016.09</span>광운대학교 제5회 소프트웨어프로그래밍 경진대회 최우수상<span class="award_name">- 광운대학교 총장</span></li>
-					<li><span class="date">2016.06</span>전북대학교-광운대학교 공동주관 2016 창업아이디어경진대회 대상<span class="award_name">- 전북대학교 총장</span></li>
-					<li><span class="date">2016.06</span>광운대학교 제8회 학생포트폴리오 경진대회 대상<span class="award_name">- 광운대학교 총장</span></li>
-					<li><span class="date">2016.02</span>광운드림공학인상<span class="award_name">- 광운대학교 총장</span></li>
-					<li><span class="date">2016.02</span>삼성SDS sGen Club 5th Exhibition 은상 (PM)<span class="award_name">- 삼성SDS</span></li>
-					<li><span class="date">2014.09</span>광운대학교 제3회 Idea Fair 최우수상<span class="award_name">- 광운대학교 총장</span></li>
-				</ul>
-			</div>
-		</div>
-		<div class="background_div"></div>
-		<div id="projects">
-			<div>
-				<p class=title>프로젝트</p>
-				<ul>
-					<li onclick="view_project('chibal');">어플리케이션 설치 없는 스마트 번호표 서비스 - 까치발</li>
-					<li  onclick="view_project('ticketto');">글로벌 메타 소셜 커머스 - Ticketto</li>
-					<li  onclick="view_project('besafe');">안면 인식을 통한 졸음 운전 방지 서비스 - BeSafe</li>
-					<li  onclick="view_project('algorithmlabs');">알고리즘 교육 플랫폼 - Algorithm LABS</li>
-					<li  onclick="view_project('blindo');">시각장애인을 위한 스마트폰 런처/전화&문자앱/점자키보드 - BlinDo</li>
-					<li  onclick="view_project('lecturehelper');">광운대학교 강의평가 Helper</li>
-					<li  onclick="view_project('kwucl');">광운대학교 중앙도서관 커뮤니케이션 서비스 - 쿠클</li>
-				</ul>
-			</div>
-		</div>
-		<div class="background_div"></div>
-		<div id="contact">
-			<div>
-				<p class=mail>lichsam@hotmail.com</p>
-			</div>
-		</div>
-	</article>
-	<footer>
-		<div><p>Copyright &copy; 2018 Hanseol Choi. All rights reserved.</p></div>
-	</footer>
-	<div id='project_window'>
-		<div id='exit_btn' onclick="exit_project();">×</div>
-		<iframe id='project_iframe'></iframe>
-	</div>
 </body>
 </html>
