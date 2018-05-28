@@ -6,5 +6,7 @@ function view_project(project_name){
 }
 function exit_project(){
 	var window = document.getElementById('project_window');
+	var iframe = document.getElementById('project_iframe');
+	iframe.src = "";
 	window.style.display = 'none';
 }
