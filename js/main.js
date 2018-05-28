@@ -10,3 +10,8 @@ function exit_project(){
 	iframe.src = "";
 	window.style.display = 'none';
 }
+function copyMail(){
+	document.querySelector('#email').select();
+	document.execCommand('copy');
+	document.getElementById('copytext').innerHTML = "Copied";
+}
