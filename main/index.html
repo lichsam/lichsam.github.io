@@ -3,14 +3,15 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>웹프로그래밍 컴퓨터소프트웨어학과 최한설 2014726084</title>		
 	<link rel="stylesheet" type="text/css" href="../stylesheets/style.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/main.js"></script>
 </head>
 <body>
 	<nav>
-		<a href="#profile"><div class=menu_profile><p>PROFILE</p></div></a>
-		<a href="#awards"><div class=menu_awards><p>AWARDS</p></div></a>
-		<a href="#projects"><div class=menu_projects><p>PROJECTS</p></div></a>
-		<a href="#contact"><div class=menu_contact><p>CONTACT</p></div></a>
+		<a href="javascript:scroll('profile');"><div class=menu_profile><p>PROFILE</p></div></a>
+		<a href="javascript:scroll('awards');"><div class=menu_awards><p>AWARDS</p></div></a>
+		<a href="javascript:scroll('projects');"><div class=menu_projects><p>PROJECTS</p></div></a>
+		<a href="javascript:scroll('contact');"><div class=menu_contact><p>CONTACT</p></div></a>
 	</nav>
 	<article>
 		<div id="profile">
@@ -76,14 +77,15 @@
 			<div>
 				<p class=title>프로젝트</p>
 				<ul>
-					<li onclick="view_project('chibal');">어플리케이션 설치 없는 스마트 번호표 서비스 - 까치발</li>
-					<li onclick="view_project('ticketto');">글로벌 메타 소셜 커머스 - Ticketto</li>
-					<li onclick="view_project('besafe');">안면 인식을 통한 졸음 운전 방지 서비스 - BeSafe</li>
-					<li onclick="view_project('algorithmlabs');">알고리즘 교육 플랫폼 - Algorithm LABS</li>
-					<li onclick="view_project('blindo');">시각장애인을 위한 스마트폰 런처/전화&문자앱/점자키보드 - BlinDo</li>
-					<li onclick="view_project('lecturehelper');">광운대학교 강의평가 Helper</li>
-					<li onclick="view_project('kwucl');">광운대학교 중앙도서관 커뮤니케이션 서비스 - 쿠클</li>
+					<li onclick="view_project('chibal');" onmouseover="mini_view('chibal');" onmouseout="mini_exit();">어플리케이션 설치 없는 스마트 번호표 서비스 - 까치발</li>
+					<li onclick="view_project('ticketto');" onmouseover="mini_view('ticketto');" onmouseout="mini_exit();">글로벌 메타 소셜 커머스 - Ticketto</li>
+					<li onclick="view_project('besafe');" onmouseover="mini_view('besafe');" onmouseout="mini_exit();">안면 인식을 통한 졸음 운전 방지 서비스 - BeSafe</li>
+					<li onclick="view_project('algorithmlabs');" onmouseover="mini_view('algorithmlabs');" onmouseout="mini_exit();">알고리즘 교육 플랫폼 - Algorithm LABS</li>
+					<li onclick="view_project('blindo');" onmouseover="mini_view('blindo');" onmouseout="mini_exit();">시각장애인을 위한 스마트폰 런처/전화&문자앱/점자키보드 - BlinDo</li>
+					<li onclick="view_project('lecturehelper');" onmouseover="mini_view('lecturehelper');" onmouseout="mini_exit();">광운대학교 강의평가 Helper</li>
+					<li onclick="view_project('kwucl');" onmouseover="mini_view('kwucl');" onmouseout="mini_exit();">광운대학교 중앙도서관 커뮤니케이션 서비스 - 쿠클</li>
 				</ul>
+				<div class="mini_view"><img src=""/></div>
 			</div>
 		</div>
 		<div class="background_div"></div>

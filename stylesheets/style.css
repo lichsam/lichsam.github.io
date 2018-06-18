@@ -188,6 +188,22 @@ article #projects li{
 article #projects li:hover{
 	color: #FFFF7E;
 }
+article #projects .mini_view{
+	display: none;
+	width: 400px;
+	height: 200px;
+	position: fixed;
+	top: 5%;
+	right: 3%;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px grey;
+}
+article #projects .mini_view img{
+	margin-top: 5px;
+	width: 390px;
+	height: 190px;
+}
 
 article #contact{
 	background-color: #289DFC;
