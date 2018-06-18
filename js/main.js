@@ -1,6 +1,6 @@
 function view_project(project_name){
 	$('#project_window').css("display","block");
-	$('#project_iframe').attr('src', "//lichsam.github.io/projects/"+project_name);
+	// $('#project_iframe').attr('src', "//lichsam.github.io/projects/"+project_name);
 }
 function exit_project(){
 	$('#project_window').css("display","none");
