@@ -4,6 +4,26 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" type="text/css" href="../../stylesheets/projects.css" />
 	<title>Projects :: Kwucl</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/jquery.magnific-popup.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../stylesheets/magnific-popup.css" />
+	<script>
+		$(document).ready(function() {
+			$('.image-popup').magnificPopup({
+				type:'image',
+				mainClass: 'mfp-with-zoom',
+				zoom: {
+					enabled: true,
+
+					duration: 300,
+					easing: 'ease-in-out',
+					opener: function(openerElement) {
+						return openerElement.is('img') ? openerElement : openerElement.find('img');
+					}
+				}
+			});
+		});
+	</script>
 </head>
 <body>
 	<div class=title><div>Kwucl</div></div>
@@ -21,7 +41,7 @@
 			<table>
 				<tr>
 					<td>
-						<img src="images/1.png"/>
+						<a class="image-popup" href="images/1.png"><img src="images/1.png"/></a>
 					</td>
 					
 				</tr>
